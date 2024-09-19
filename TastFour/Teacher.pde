@@ -13,4 +13,10 @@ class teacher{
     age = tempAge;
     isFemale = tempIsFemale;
   }
+  
+  void changeName(String input){
+    name = input;
+  }
+  
+  
 }
