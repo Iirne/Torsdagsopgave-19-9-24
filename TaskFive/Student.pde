@@ -14,4 +14,8 @@ class student{
     isFemale = tempIsFemale;
     datamatikerTeam = tempDatamatikerTeam;
   }
+  //checks if the input value is the same as the team its on and returns the boolean value
+  boolean isClassmates(String input){
+    return input == datamatikerTeam;
+  }
 }

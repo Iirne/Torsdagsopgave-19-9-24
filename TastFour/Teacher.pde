@@ -13,7 +13,7 @@ class teacher{
     age = tempAge;
     isFemale = tempIsFemale;
   }
-  
+  //changes the name of the teacher to the input string
   void changeName(String input){
     name = input;
   }

@@ -8,4 +8,14 @@ void setup(){
   println(T1.name);
   println(S1.name + " from team " + S1.datamatikerTeam);
   println(S2.name + " from team " + S2.datamatikerTeam);
+  
+  //if they are part of the same student team they are classmates and prints such
+  boolean classStatus = S1.isClassmates(S2.datamatikerTeam);
+  if (classStatus == true){
+    println(S1.name + " and " + S2.name + " are classmates");
+  }
+  else{
+    println(S1.name + " and " + S2.name + " aren't classmates");
+  }
+  
 }
