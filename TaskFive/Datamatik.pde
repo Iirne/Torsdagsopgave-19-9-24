@@ -10,7 +10,7 @@ void setup(){
   println(S2.name + " from team " + S2.datamatikerTeam);
   
   //if they are part of the same student team they are classmates and prints such
-  boolean classStatus = S1.isClassmates(S2.datamatikerTeam);
+  boolean classStatus = isClassmates(S2, S1);
   if (classStatus == true){
     println(S1.name + " and " + S2.name + " are classmates");
   }
@@ -18,4 +18,9 @@ void setup(){
     println(S1.name + " and " + S2.name + " aren't classmates");
   }
   
+}
+
+//checks if the input value is the same as the team its on and returns the boolean value
+boolean isClassmates(student input, student input2){
+  return input.datamatikerTeam == input2.datamatikerTeam;
 }
